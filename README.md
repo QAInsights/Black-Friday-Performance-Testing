@@ -6,6 +6,8 @@ The objective of this exercise is to measure the response time trend of popular 
 
 This experiment **will not inject load** to the websites under test. The script will **send only one HTTP(S) request every one hour** to measure the performance. The actual workload will be from the real users.
 
+I will spin up an EC2 instance (free tier) from AWS in Ohio region and exeute the test. 
+
 # Tools
 
 Apache JMeter 5.2 will be used to design the test. CLI mode will be used for the actual run or Taurus might be used.
