@@ -4,7 +4,7 @@ The objective of this exercise is to measure the response time trend of popular 
 
 # Strategy
 
-This experiment will not inject load to the websites under test. The script will send only one HTTP(S) request every one hour to measure the performance. The actual workload will be from the real users. 
+This experiment **will not inject load** to the websites under test. The script will **send only one HTTP(S) request every one hour** to measure the performance. The actual workload will be from the real users.
 
 # Tools
 
