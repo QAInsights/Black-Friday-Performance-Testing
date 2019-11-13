@@ -8,7 +8,7 @@ This experiment **will not inject load** to the websites under test. The script 
 
 # Tools
 
-Apache JMeter 5.2 will be used to design the test. CLI mode will be used for the actual run.
+Apache JMeter 5.2 will be used to design the test. CLI mode will be used for the actual run or Taurus might be used.
 
 # Test Window
 
