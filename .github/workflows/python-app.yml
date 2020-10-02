@@ -32,3 +32,9 @@ jobs:
     - name: Run Page Speed Insights
       run: |
         python app.py
+    - name: Commit latest release version
+      run: |
+        git config --global user.name 'QAInsights'
+        git config --global user.email 'catch.nkn@gmail.com'
+        git commit -am "Updated"
+        git push
