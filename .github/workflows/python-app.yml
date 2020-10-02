@@ -36,5 +36,5 @@ jobs:
       run: |
         git config --global user.name 'QAInsights'
         git config --global user.email 'catch.nkn@gmail.com'
-        git commit -am "Updated"
+        git commit -am "Updated the results"
         git push

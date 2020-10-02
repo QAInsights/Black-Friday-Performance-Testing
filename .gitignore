@@ -133,3 +133,6 @@ dmypy.json
 
 # App related output
 tmp.log
+
+# Config
+config.py

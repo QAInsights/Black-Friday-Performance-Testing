@@ -1,3 +1,4 @@
+import config
 import requests
 import csv
 import json
@@ -8,7 +9,7 @@ def get_insights(site):
     @param site: Website URL    
     """
     url = "https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=https://" + str(site) + \
-            "&key=AIzaSyC7vcN8DTFge3OFUDSGNyYhhbiOHmnbRVQ" + "&strategy=DESKTOP"
+            "&key=" + config.PAGE_SPEED_API_KEY  + "&strategy=DESKTOP"
     print(url)
     # Send URL
     req = requests.get(url)
