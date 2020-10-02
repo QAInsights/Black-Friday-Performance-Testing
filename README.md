@@ -1,16 +1,14 @@
 # Objective
 
-The objective of this exercise is to measure the response time trend of popular US retail websites during Thanksgiving and Black Friday 2019.
+The objective of this exercise is to measure the response time trend of popular US retail websites during Thanksgiving and Black Friday 2020.
 
 # Strategy
 
-This experiment **will not inject load** to the websites under test. The script will **send only one HTTP(S) request every one hour** to measure the performance. The actual workload will be from the real users.
-
-I will spin up an EC2 instance (free tier) from AWS in Ohio region and exeute the test. 
+This experiment **will not inject load** to the websites under test. The script will **send only one HTTP(S) request every 15 minutes** to measure the performance. The actual workload will be from the real users.
 
 # Tools
 
-Apache JMeter 5.2 will be used to design the test. CLI mode will be used for the actual run or Taurus might be used.
+<>
 
 # Test Window
 
@@ -22,4 +20,4 @@ Results will be published after collating the results tentatively by 06.00 PM ES
 
 # Performance Metrics
 
-Results will feature the response time (Average, Min, Max, 95th percentile), Number of Transactions Passsed/Failed, and Throughput.
+<>
