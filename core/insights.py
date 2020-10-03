@@ -3,13 +3,13 @@ import requests
 import csv
 import json
 
-def get_insights(site):
+def get_insights(site,key):
     """
     Get Page Speed Insights for each site
     @param site: Website URL    
     """
     url = "https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=https://" + str(site) + \
-            "&key=" + config.PAGE_SPEED_API_KEY  + "&strategy=DESKTOP"
+            "&key=" + key  + "&strategy=DESKTOP"
     print(url)
     # Send URL
     req = requests.get(url)
