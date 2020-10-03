@@ -38,7 +38,9 @@ jobs:
         pwd
         ls
 
-    - name: Run Page Speed Insights      
+    - name: Run Page Speed Insights     
+      env:
+        PAGE_SPEED_API_KEY: ${{ secrets.API_KEY }}
       run: |
         python app.py
 
