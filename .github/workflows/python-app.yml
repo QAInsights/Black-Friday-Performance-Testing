@@ -30,12 +30,15 @@ jobs:
         # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Get API Key
+      env:
+        PAGE_SPEED_API_KEY: ${{ secrets.API_KEY }}
       run: |
-        echo 'PAGE_SPEED_API_KEY = '${{ secrets.API_KEY }}'' > config.py
+        echo 'PAGE_SPEED_API_KEY = '$PAGE_SPEED_API_KEY'' > config.py
         cat config.py
         pwd
         ls
     - name: Run Page Speed Insights
+      
       run: |
         python app.py
     - name: Commit latest release version
