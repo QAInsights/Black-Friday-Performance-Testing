@@ -31,7 +31,7 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Get API Key
       run: |
-        echo ${{ secrets.API_KEY }} > config.py
+        echo "PAGE_SPEED_API_KEY = " ${{ secrets.API_KEY }} > config.py
         cat config.py
         pwd
         ls
