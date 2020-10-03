@@ -32,13 +32,11 @@ jobs:
       env:
         PAGE_SPEED_API_KEY: ${{ secrets.API_KEY }}
       run: |
+        echo "$PAGE_SPEED_API_KEY"
         echo 'PAGE_SPEED_API_KEY = '$PAGE_SPEED_API_KEY'' > config.py
         cat config.py
         pwd
         ls
-
-    - name: Test printing your secret
-      run: cat $HOME/secrets/my_secret.json
 
     - name: Run Page Speed Insights      
       run: |
