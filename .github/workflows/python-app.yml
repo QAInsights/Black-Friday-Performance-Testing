@@ -9,7 +9,6 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
@@ -37,10 +36,14 @@ jobs:
         cat config.py
         pwd
         ls
-    - name: Run Page Speed Insights
-      
+
+    - name: Test printing your secret
+      run: cat $HOME/secrets/my_secret.json
+
+    - name: Run Page Speed Insights      
       run: |
         python app.py
+
     - name: Commit latest release version
       run: |
         git config --global user.name 'QAInsights'
