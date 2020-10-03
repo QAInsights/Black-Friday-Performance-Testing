@@ -33,6 +33,8 @@ jobs:
       run: |
         echo ${{ secrets.API_KEY }} > config.py
         cat config.py
+        pwd
+        ls
     - name: Run Page Speed Insights
       run: |
         python app.py
