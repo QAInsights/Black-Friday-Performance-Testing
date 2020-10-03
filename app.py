@@ -1,5 +1,6 @@
 import yaml
-import argparser
+import argparse
+
 from core.insights import get_insights
 
 def main():
