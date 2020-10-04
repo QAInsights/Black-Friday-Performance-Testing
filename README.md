@@ -8,7 +8,7 @@ This experiment **will not inject load** to the websites under test. The script 
 
 # 🌐 List of Websites under test
 
-Here are the [URLs](urls.yaml) which will be tested. If you would like to add, please submit a PR to include.
+Here are the [URLs](urls.yaml) which will be tested. If you would like to add any other websites, please submit a PR.
 
 # 🔧 Tools
 
