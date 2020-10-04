@@ -19,7 +19,9 @@ def get_insights(site,key):
         res = json.loads(req.text)
         try:
             # Fetch Time
-            fetch_time = str(res['lighthouseResult']['fetchTime'])
+            #fetch_time = str(res['lighthouseResult']['fetchTime'])
+            # Getting Current time stamp in ms
+            fetch_time = int(round(time.time() * 1000))
             # Lab Data
             #Print FCP
             fcp = str(res['lighthouseResult']['audits']['first-contentful-paint']['displayValue'])
