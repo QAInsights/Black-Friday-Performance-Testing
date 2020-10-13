@@ -59,9 +59,9 @@ def get_insights(site,key):
                     'FMP':fmp,
                     'EIL':fci,
                     'CLS':eil,
-                    'FIRST_CONTENTFUL_PAINT_MS': field_lcp,
+                    'FIRST_CONTENTFUL_PAINT_MS': field_fcp,
                     'FIRST_INPUT_DELAY_MS': field_fid,
-                    'LARGEST_CONTENTFUL_PAINT_MS': field_fcp,
+                    'LARGEST_CONTENTFUL_PAINT_MS': field_lcp,
                     'CUMULATIVE_LAYOUT_SHIFT_SCORE': field_cls                
                 }            
                 )            
