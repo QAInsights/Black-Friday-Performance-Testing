@@ -49,6 +49,8 @@ Following metrics will be captured:
  
  # How to setup this experiment on your own?
  
+ * Clone this repo
+ * Install the requirements using `pip install -r requirements.txt`
  * Grab a Page Speed Insights API from [here](https://developers.google.com/speed/docs/insights/v5/get-started).
  * Create a GitHub Secret `PAGE_SPEED_API_KEY` in your repo. For instructions, please check [here](https://docs.github.com/en/free-pro-team@latest/actions/reference/encrypted-secrets). Never ever expose your API key in your repo.
  * In your `.github/workflows/python-app.yml` file, configure your details in the line 41 and 42.
