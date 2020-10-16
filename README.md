@@ -50,7 +50,7 @@ Following metrics will be captured:
  # ❓ FAQs
 
  * Can I view the performance realtime?
-    - No. The setup doesn't include that. But you can download the raw results anytime once the experiement started and analyze it yourself.
+    - No. The setup doesn't include that. But you can download the raw results anytime once the experiment started and analyze it yourself.
  * What is the cost involved in this experiement?
     - Nothing. All are using free resources.😊
  * Can I setup this experiment on my own?
