@@ -19,7 +19,7 @@ Only the desktop performance will be captured.
 
 # 🌐 List of Websites under test
 
-Here are the [URLs](urls.yaml) which will be tested. If you would like to add any other websites, please submit a PR.
+Here are the [URLs](urls_bf.yaml) which will be tested. If you would like to add any other websites, please submit a PR.
 
 # 🔧 Tools
 
