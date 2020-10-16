@@ -46,6 +46,20 @@ Following metrics will be captured:
  - First Input Delay (FID)
  - Largest Contentful Paint (LCP)
  - Cumulative Layout Shift (CLS)
+ 
+ # How to setup this experiment on your own?
+ 
+ * Grab a Page Speed Insights API from [here](https://developers.google.com/speed/docs/insights/v5/get-started).
+ * Create a GitHub Secret `PAGE_SPEED_API_KEY` in your repo. For instructions, please check [here](https://docs.github.com/en/free-pro-team@latest/actions/reference/encrypted-secrets). Never ever expose your API key in your repo.
+ * In your `.github/workflows/python-app.yml` file, configure your details in the line 41 and 42.
+ * By default, GitHub Action will get triggered on every push.
+ * To schedule the run for every 15 minutes, use the below config in the yaml file.
+```
+ on:
+  schedule:
+    # * is a special character in YAML so you have to quote this string
+    - cron:  '*/15 * * * *'
+```
 
  # ❓ FAQs
 
@@ -53,5 +67,3 @@ Following metrics will be captured:
     - No. The setup doesn't include that. But you can download the raw results anytime once the experiment started and analyze it yourself.
  * What is the cost involved in this experiement?
     - Nothing. All are using free resources.😊
- * Can I setup this experiment on my own?
-    - Yes. Please raise a PR if you are really interested.
