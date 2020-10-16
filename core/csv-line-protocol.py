@@ -7,8 +7,10 @@ df = pd.read_csv("results.csv")
 lines = ["rs"
          + ",url=" + str(df["URL"][d])
          + " "
-         + "fcp=" + str(df["FIRST_CONTENTFUL_PAINT_MS"][d]) + ","
-         + "lcp=" + str(df["LARGEST_CONTENTFUL_PAINT_MS"][d])
+         + "fcp=" + str(df["FCP"][d]) + ","         
+         + "toi=" + str(df["TOI"][d]) + ","
+         + "si=" + str(df["SI"][d]) + ","
+         + "fmp=" + str(df["FMP"][d])
          + " " + str(df["FETCH_TIME"][d]) for d in range(len(df))]
 
 thefile = open('influx.txt', 'w')
