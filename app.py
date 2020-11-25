@@ -20,7 +20,7 @@ def main():
         )
     args = parser.parse_args()
     key = args.apikey
-    with open('urls.yaml') as url:
+    with open('urls_bf.yaml') as url:
         url = yaml.safe_load(url)
         for site in url['Websites']:
             get_insights(site,key)
