@@ -6,6 +6,7 @@ from core.insights import get_insights
 def main():
     """
     The main context.
+    Start Time: 11/25 06.00 PM EST
     """
     parser = argparse.ArgumentParser(
             description='API Key'
