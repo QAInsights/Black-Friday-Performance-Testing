@@ -32,7 +32,7 @@ Here are the [URLs](urls_bf.yaml) which will be tested. If you would like to add
 
 # ⌛ Test Window
 
-Test will start at 12.00 AM EST on Nov 28 and ends at 12.01 AM EST Nov 30.
+Test will start at 12.00 AM EST on Nov 25 and ends at 12.01 AM EST Nov 30.
 
 # 🔢 Results
 
