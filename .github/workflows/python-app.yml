@@ -4,8 +4,8 @@
 name: Python application
 
 on:
-  schedule:
-    - cron: "*/15 * * * *"
+  push:
+    branches: master
           
 jobs:
   build:
