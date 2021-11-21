@@ -1,3 +1,6 @@
+# Panda package is not added to the requirements.txt
+# To run CSV Line Protocol, install panda package using `pip install pandas`
+
 import pandas as pd
 
 df = pd.read_csv("results.csv")

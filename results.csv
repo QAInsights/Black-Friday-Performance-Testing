@@ -1,17 +1,1 @@
 URL,FETCH_TIME,FCP,TOI,SI,FMP,CLS,FIRST_CONTENTFUL_PAINT_MS,FIRST_INPUT_DELAY_MS,LARGEST_CONTENTFUL_PAINT_MS,CUMULATIVE_LAYOUT_SHIFT_SCORE
-www.example.com,1637461068065,0.2 s,0.2 s,0.2 s,0.2 s,1234,2,1231,0
-www.kroger.com,1637461811581,0.5 s,4.5 s,2.8 s,0.5 s,2801,81,3933,26
-www.walmart.com,1637461839012,0.6 s,3.6 s,2.1 s,0.6 s,2302,29,3113,68
-www.wholefoods.com,1637462001582,1.4 s,2.3 s,1.6 s,1.6 s,944,15,2249,8
-www.apple.com,1637462018802,1.1 s,1.2 s,1.3 s,1.2 s,2121,3,2228,0
-store.google.com,1637462110037,1.2 s,2.6 s,1.4 s,1.2 s,1458,3,2684,4
-www.verizon.com,1637462135618,1.0 s,4.8 s,1.3 s,1.2 s,1369,9,2580,101
-www.staples.com,1637462291195,0.5 s,0.5 s,0.6 s,0.5 s,1782,13,2216,36
-www.dell.com,1637462316394,0.7 s,5.2 s,2.0 s,0.7 s,1009,6,1345,0
-www.target.com,1637462341988,0.7 s,3.6 s,1.5 s,0.7 s,992,96,1928,75
-www.bjs.com,1637462375205,0.9 s,7.0 s,2.2 s,1.2 s,1544,161,2759,54
-www.lenovo.com,1637462396862,1.3 s,4.5 s,2.1 s,1.4 s,2998,6,3184,1
-www.harborfreight.com,1637462422609,1.0 s,3.8 s,2.2 s,1.0 s,1913,11,2398,56
-www.gamestop.com,1637462451053,1.1 s,5.1 s,2.7 s,1.3 s,1773,14,3231,50
-www.overstock.com,1637462514679,0.4 s,1.5 s,1.8 s,0.4 s,1499,19,2069,7
-www.dickssportinggoods.com,1637462542820,1.0 s,3.2 s,1.7 s,1.0 s,1745,22,2778,121

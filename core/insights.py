@@ -3,24 +3,31 @@ import csv
 import json
 import time
 
+
 from core.write_to_influx import write_to_influx_cloud
+
 
 
 def get_insights(site, key, bucket, influxkey, influxurl, influxorg):
     """
     Get Page Speed Insights for each site
-    @param key: PageSpeed Insights API Key
-    @param site: Website URL
+    @param bucket:          Influx bucket name
+    @param influxkey:       Influx API key
+    @param influxurl:       Influx Cloud URL
+    @param influxorg:       Influx Org name
+    @param key:             PageSpeed Insights API Key
+    @param site:            Website URL
     """
     try:
         url = "https://pagespeedonline.googleapis.com/pagespeedonline/v5/runPagespeed?url=https%3A%2F%2F" + str(site) + \
               "&category=PERFORMANCE&strategy=DESKTOP" + "&key=" + key
-        print(url)
-        time.sleep(5)
+        print("Checking the insights of " + url)
+
         # Compose Headers
         headers = {
             'content-type': 'application/json'
         }
+        time.sleep(2)
 
         # Send URL
         req = requests.get(url, headers=headers, timeout=30)
