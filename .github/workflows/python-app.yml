@@ -13,10 +13,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Set up Python 3.8
+    - name: Set up Python 3.9
       uses: actions/setup-python@v2
       with:
-        python-version: 3.8
+        python-version: 3.9
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
@@ -32,8 +32,12 @@ jobs:
     - name: Run Page Speed Insights     
       env:
         PAGE_SPEED_API_KEY: ${{ secrets.API_KEY }}
+        BUCKET_NAME: ${{ secrets.BUCKET_NAME }}
+        INFLUX_API_KEY: ${{ secrets.INFLUX_API_KEY }}
+        INFLUX_URL: ${{ secrets.INFLUX_URL }}
+        INFLUX_ORG: ${{ secrets.INFLUX_ORG }}
       run: |
-        python app.py -k ${PAGE_SPEED_API_KEY}
+        python app.py -k ${PAGE_SPEED_API_KEY} -b ${BUCKET_NAME} -i ${INFLUX_API_KEY} -u ${INFLUX_URL} -o ${INFLUX_ORG}
 
     - name: Commit latest release version
       run: |
