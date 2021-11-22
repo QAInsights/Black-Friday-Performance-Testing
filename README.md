@@ -7,7 +7,7 @@
 
 # 🎯 Objective
 
-The objective of this exercise is to measure the response time trend of popular US retail websites during Thanksgiving and Black Friday 2020. This will help us to reveal the performance and its effect of retain giants.  
+The objective of this exercise is to measure the response time trend of popular US retail websites during Thanksgiving and Black Friday 2021. This will help us to reveal the performance and its effect of retain giants.  
 
 # 🔝 Strategy
 
@@ -24,10 +24,10 @@ Here are the [URLs](urls_bf.yaml) which will be tested. If you would like to add
 # 🔧 Tools
 
 - [Page Speed Insights](https://developers.google.com/speed/docs/insights/v5/about)    
-- Python 3.8
+- Python 3.9
 - GitHub Actions
     - Chrome browser
-    - Ubuntu 18.04 LTS
+    - Ubuntu latest
 - Influx DB Cloud (Free Plan)
 
 # ⌛ Test Window
@@ -36,7 +36,7 @@ Test will start at 12.00 AM EST on Nov 25 and ends at 12.01 AM EST Nov 30.
 
 # 🔢 Results
 
-Results will be published after collating the results tentatively by 06.00 PM EST on Dec 01.
+Results will publish instantly to InfluxDB cloud. 
 
 # 📊 Performance Metrics
 
@@ -47,12 +47,17 @@ Following metrics will be captured:
  - Largest Contentful Paint (LCP)
  - Cumulative Layout Shift (CLS)
  
- # How to setup this experiment on your own?
+ # How to set up this experiment on your own?
  
  * Clone this repo
  * Install the requirements using `pip install -r requirements.txt`
  * Grab a Page Speed Insights API from [here](https://developers.google.com/speed/docs/insights/v5/get-started).
- * Create a GitHub Secret `PAGE_SPEED_API_KEY` in your repo. For instructions, please check [here](https://docs.github.com/en/free-pro-team@latest/actions/reference/encrypted-secrets). Never ever expose your API key in your repo.
+ * Create GitHub secrets for the following. For instructions, please check [here](https://docs.github.com/en/free-pro-team@latest/actions/reference/encrypted-secrets). Never ever expose your API key in your repo.
+   * `API_KEY` - PageSpeed API key
+   * `BUCKET_NAME` - Influx DB bucket name
+   * `INFLUX_API_KEY` - Influx DB API key
+   * `INFLUX_URL` - Influx DB cloud URL
+   * `INFLUX_ORG` - Influx Org name
  * In your `.github/workflows/python-app.yml` file, configure your details in the line 41 and 42.
  * By default, GitHub Action will get triggered on every push.
  * To schedule the run for every 15 minutes, use the below config in the yaml file.
@@ -66,6 +71,6 @@ Following metrics will be captured:
  # ❓ FAQs
 
  * Can I view the performance realtime?
-    - No. The setup doesn't include that. But you can download the raw results anytime once the experiment started and analyze it yourself.
- * What is the cost involved in this experiement?
+    - Yes. Using the Influx DB cloud, the results will get published instantly.
+ * What is the cost involved in this experiment?
     - Nothing. All are using free resources.😊
