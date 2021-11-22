@@ -47,7 +47,7 @@ Following metrics will be captured:
  - Largest Contentful Paint (LCP)
  - Cumulative Layout Shift (CLS)
  
- # How to set up this experiment on your own?
+ # 👩‍🍳 How to set up this experiment on your own?
  
  * Clone this repo
  * Install the requirements using `pip install -r requirements.txt`
